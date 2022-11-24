@@ -1,0 +1,17 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: homepage_web_1
+      APP_PORT: 3303
+  
+  web:
+    image: ghcr.io/benphelps/homepage:latest
+    restart: on-failure
+    stop_grace_period: 1m
+    ports:
+      - 3303:3000
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ${APP_DATA_DIR}/config:/app/config

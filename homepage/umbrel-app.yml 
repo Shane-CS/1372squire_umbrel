@@ -1,0 +1,21 @@
+manifestVersion: 1
+id: homepage
+category: Productivity
+name: Homepage
+version: "0.4.18"
+tagline: A modern (fully static, fast), secure (fully proxied), highly customizable application dashboard
+description: >-
+ A modern (fully static, fast), secure (fully proxied), highly customizable application dashboard with integrations for more than 25 services and translations for over 15 languages. Easily configured via YAML files (or discovery via docker labels). 
+releaseNotes: >-
+  None
+developer: Ben Phelps
+website: https://github.com/benphelps/homepage
+repo: https://github.com/benphelps/homepage
+port: 3303
+gallery:
+  - 1.png
+  - 2.png
+  - 3.png
+path: ""
+defaultUsername: ""
+defaultPassword: ""
